@@ -1,0 +1,47 @@
+<%- include('partials1/header1'); -%>
+
+<div class="container2">
+    <form action="/bpayment" method="post">
+        <div class="col-lg-12 my wavy">
+            <h2 ><i>Total Price: <%= nprice %></i></h2>
+        </div>
+        
+        <form id="form1">
+            <div id="dvContainer">
+                <div id="container1">	
+	
+                    <div class="product-details1">
+                        
+                    
+                    <p><b>Bus Name: </b><%= bname %></p>
+                    <p><b>From: </b><%= bfrom %></p>
+                    <p><b>To: </b> <%= bto %></p>
+                    <p><b>No. of tickets: </b><%= bticket %></p>
+                    <p><b>User : </b><%= name %></p>
+                    <p><b>Price : </b><%= nprice %></p>
+                    <p><b>Bus Category: </b><%= bcategory %></p>
+                    
+                            
+                </div>
+                
+                    
+                <div class="product-image">
+                    
+                    <img src="/img/bus.jpg" alt="">
+                    
+                
+                
+                </div>
+                
+                </div>
+            </div>
+            <div class="button1">
+                <input type="button" value="Download your ticket" id="btnPrint" />
+            </div>
+            </form>
+    </form>
+</div>
+    
+    
+
+<%- include('partials/footer'); -%>

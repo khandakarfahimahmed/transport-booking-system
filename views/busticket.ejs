@@ -1,0 +1,38 @@
+<%- include('partials1/header1'); -%>
+<form action="/bticket" method="post">
+    
+    <div id="container1">	
+        
+	
+        <div class="product-details1">
+            
+        <h1><%= bname%> </h1> <h5 class="rd">(Seat Status: <%= bseat %> )</h5>
+        <hr>
+        <p><b>From: </b><%= bfrom %></p>
+        <p><b>To: </b> <%= bto %></p>
+        <p><b>No. of tickets: </b><%= bticket %></p>
+        <p><b>Name : </b><%= name %></p>
+                
+    </div>
+    
+        
+    <div class="product-image">
+        
+        <img src="/img/bus.jpg" alt="">
+        
+    
+    
+    </div>
+    
+    </div>
+
+    <div class="button1 ">
+        <input type="submit" value="procced to payment">
+    </div>
+    
+</form>
+
+
+
+
+<%- include('partials/footer'); -%>

@@ -1,0 +1,67 @@
+<%- include('partials1/header1'); -%>
+
+
+<h1>BUS</h1>
+<hr>
+<div class="container user-details ">
+    <form action="/bus" method="post">
+        <div class="row col-lg-12">
+            <div class="col-lg-6">
+                <div class="row col-lg-12 input-box">
+                    <div class="col-lg-6 ">
+                        <span class="details">From</span>
+                        <input type="text" placeholder="&#xf3c5 Enter City" style="font-family:Arial, FontAwesome" list="suggestions" required name="bstartPoint">
+                        <datalist id="suggestions">
+                            <option value="Dhaka">
+                            <option value="Cox's Bazar">
+                        </datalist>
+                    </div>
+        
+                    <div class="col-lg-6 ">
+                        <span class="details">To</span>
+                        <input type="text" placeholder="&#xf3c5 Enter City" style="font-family:Arial, FontAwesome" list="bsuggestions" required name="busendingPoint">
+                        <datalist id="bsuggestions">
+                            <option value="Dhaka">
+                            <option value="Cox's Bazar">
+                        </datalist>
+                    </div>
+
+                    <div class="col-lg-12 ">
+                        <span class="details">Bus Category</span>
+                        <input type="text" placeholder="&#xf0c9   Business/Economy" style="font-family:Arial, FontAwesome" list="bcategorysuggestions" required name="buscategory">
+                        <datalist id="bcategorysuggestions">
+                            <option value="Business">
+                            <option value="Economy">
+                        </datalist>
+                    </div>
+                    
+                    <!-- practice -->
+                    <div class="col-lg-6 ">
+                        <span class="details">Bus Name</span>
+                        <input type="text" placeholder="&#xf207 " style="font-family:Arial, FontAwesome" list="bussuggestions" required name="bname">
+                        <datalist id="bussuggestions">
+                            <option value="Hanif Enterprise">
+                            <option value="Green Line Paribahan">
+                            <option value="TR Travels">
+                        </datalist>
+                    </div>
+                    <div class="col-lg-6">
+                        <span class="details">No. of Tickets</span>
+                        <input type="text" placeholder="&#xf145" style="font-family:Arial, FontAwesome"  required name="bticket">
+                    </div>
+                    <!-- practice -->
+                    <div class="button row col-lg-12 ">
+                        <input type="submit" value="submit">
+                      </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="/img/bus.jpg" alt="" width="618" height="350">
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+<%- include('partials/footer'); -%>

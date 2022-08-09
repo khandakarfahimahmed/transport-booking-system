@@ -1,0 +1,36 @@
+<%- include('partials1/header1'); -%>
+<form action="/tticket" method="post">
+    <div id="container1">	
+	
+        <div class="product-details1">
+            
+        <h1><%= tname %></h1>  <h5 class="rd">(Seat Status: <%= tseat %> )</h5>
+        <hr>
+        <p><b>From: </b><%= tfrom %></p>
+        <p><b>To: </b> <%= tto %></p>
+        <p><b>No. of tickets: </b><%= tticket %></p>
+        <p><b>Name : </b><%= name %></p>
+                
+    </div>
+    
+        
+    <div class="product-image">
+        
+        <img src="/img/train.PNG" alt="">
+        
+    
+    
+    </div>
+    
+    </div>
+
+    <div class="button1 ">
+        <input type="submit" value="procced to payment">
+    </div>
+    
+</form>
+
+
+
+
+<%- include('partials/footer'); -%>

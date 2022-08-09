@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- <script src="https://kit.fontawesome.com/2d799ae9f1.js"></script> -->
+<head>
+  <meta charset="utf-8">
+  <title>e-ticket</title>
+  <meta charset="utf-8">
+  <!-- pdfpart -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $("#btnPrint").live("click", function () {
+            var divContents = $("#dvContainer").html();
+            var printWindow = window.open('', '', 'height=400,width=800');
+            printWindow.document.write('<html><head><title>DIV Contents</title>');
+            printWindow.document.write('</head><body >');
+            printWindow.document.write(divContents);
+            printWindow.document.write('</body></html>');
+            printWindow.document.close();
+            printWindow.print();
+        });
+    </script>
+    <!-- pdfpart -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="/css/styles.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <p  class="navbar-brand"><a href="/"><img src="/img/fgjj.PNG" alt="" width="70" height="50">e-ticket</a></p>
+      </div>
+        <ul class="nav navbar-nav navbar-right">
+          <!-- 6 -->
+          <li id="home"><a href="/"></a></li>
+          <li id="about"><a href="/register"></a></li>
+          <li id="contact"><a href="/" class="btn btn-info btn-md">
+            <span class="glyphicon glyphicon-log-out"></span> Log out
+          </a></li>
+        </ul>
+    </div>
+  </nav>
+
+  <body>
+    <div class="container">
